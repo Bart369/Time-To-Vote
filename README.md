@@ -12,6 +12,8 @@ Tech:
 
 Frontend: React,
 Backend: Node/Express,
+APIs - Google Civic Information Api (https://developers.google.com/civic-information/docs/using_api) &
+Election Official Data (https://www.usvotefoundation.org/Civic-Data-API)
 More to come...
 
 Schedule:
