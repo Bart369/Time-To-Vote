@@ -1,55 +1,55 @@
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Alabama', 'June 5', 'July 17', 'No', '7')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Alaska', 'August 21', '—', 'No', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('American Samoa', '—', '—', '—', '1 Delegate')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Arizona', 'August 28', '—', 'Yes', '9')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Arkansas', 'May 22', 'June 19', 'No', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('California', 'June 5', '—', 'Yes', '53')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Colorado', 'June 26', '—' 'No', '7')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Connecticut', 'August 14', '—', 'Yes', '5')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Delaware', 'September 6', '—', 'Yes', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('District of Columbia', 'June 19', '—', '—', '1 Delegate')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Florida', 'August 28', '—', 'Yes', '27')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Georgia', 'May 22', 'July 24', 'No', '14')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Guam', 'August 25', '—', '—', '1 Delegate')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Hawaii', 'August 11', '—', 'Yes', '2') 
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Idaho', 'May 15', '—', 'No', '2')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Illinois', 'March 20', '—', 'No', '18')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Indiana', 'May 8', '—', 'Yes', '9')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Iowa', 'June 5', '—', 'No', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Kansas', 'August 7', '—', 'No', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Kentucky', 'May 22', '—', 'No', '6')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Louisiana', 'November 6', '—', 'No', '6')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Maine', 'June 12', '—', 'Yes', '2')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Maryland', 'June 26', '—', 'Yes', '8')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Massachusetts', 'September 18', '—', 'Yes', '9')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Michigan', 'August 7', '—', 'Yes', '14')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Minnesota', 'August 14', '—', 'Yes', '8')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Mississippi', 'June 5', '—', 'Yes', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Missouri', 'August 7', '—', 'Yes', '8')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Montana', 'June 5', '—', 'Yes', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Nebraska', 'May 15', '—', 'Yes', '3')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Nevada', 'June 12', '—', 'Yes', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Hampshire', 'September 11', '—', 'No', '2')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Jersey', 'June 5', '—', 'Yes', '12')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Mexico', 'June 5', '—', 'Yes', '3')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New York', 'June 28 (Federal Primary)', '—', 'Yes', '27')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('North Carolina', 'May 8', 'July 17 (Federal Primary Runoff)', '13')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('North Dakota', 'June 12', '—', 'Yes', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Ohio', 'May 8', '—', 'Yes', '16')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Oklahoma', 'June 26', 'August 28', 'No', '5')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Oregon', 'May 15', '—', 'No', '5')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Pennsylvania', 'May 15', '—', 'Yes', '18')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Puerto Rico', '—', '—', '—', '1 Resident')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Rhode Island', 'Septmeber 12', '—', 'Yes', '2')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('South Carolina', 'June 12', 'June 26', 'No', '7')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('South Dakota', 'June 5', '—', 'No', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Tennessee', 'August 2', '—', 'Yes', '9')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Texas', 'March 6', 'May 22', 'Yes', '36')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Utah', 'June 26', '—', 'Yes', '4')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Vermont', 'August 14', '—', 'Yes', '1')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Virgin Islands', 'August 4', '—', '—', '1 Delegate')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Virginia', 'June 12', '—', 'Yes', '11')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Washington', 'August 7', '—', 'Yes', '10')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('West Virginia', 'May 8', '—', 'Yes', '3')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Wisconsin', 'August 14', '—', 'Yes', '8')
-INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Wyoming', 'August 21', '—', 'Yes', '1')
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Alabama', 'June 5', 'July 17', 'No', '7');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Alaska', 'August 21', '—', 'No', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('American Samoa', '—', '—', '—', '1 Delegate');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Arizona', 'August 28', '—', 'Yes', '9');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Arkansas', 'May 22', 'June 19', 'No', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('California', 'June 5', '—', 'Yes', '53');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Colorado', 'June 26', '—' 'No', '7');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Connecticut', 'August 14', '—', 'Yes', '5');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Delaware', 'September 6', '—', 'Yes', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('District of Columbia', 'June 19', '—', '—', '1 Delegate');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Florida', 'August 28', '—', 'Yes', '27');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Georgia', 'May 22', 'July 24', 'No', '14');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Guam', 'August 25', '—', '—', '1 Delegate');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Hawaii', 'August 11', '—', 'Yes', '2');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Idaho', 'May 15', '—', 'No', '2');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Illinois', 'March 20', '—', 'No', '18');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Indiana', 'May 8', '—', 'Yes', '9');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Iowa', 'June 5', '—', 'No', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Kansas', 'August 7', '—', 'No', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Kentucky', 'May 22', '—', 'No', '6');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Louisiana', 'November 6', '—', 'No', '6');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Maine', 'June 12', '—', 'Yes', '2');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Maryland', 'June 26', '—', 'Yes', '8');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Massachusetts', 'September 18', '—', 'Yes', '9');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Michigan', 'August 7', '—', 'Yes', '14');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Minnesota', 'August 14', '—', 'Yes', '8');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Mississippi', 'June 5', '—', 'Yes', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Missouri', 'August 7', '—', 'Yes', '8');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Montana', 'June 5', '—', 'Yes', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Nebraska', 'May 15', '—', 'Yes', '3');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Nevada', 'June 12', '—', 'Yes', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Hampshire', 'September 11', '—', 'No', '2');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Jersey', 'June 5', '—', 'Yes', '12');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New Mexico', 'June 5', '—', 'Yes', '3');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('New York', 'June 28 (Federal Primary)', '—', 'Yes', '27');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('North Carolina', 'May 8', 'July 17 (Federal Primary Runoff)', '13');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('North Dakota', 'June 12', '—', 'Yes', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Ohio', 'May 8', '—', 'Yes', '16');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Oklahoma', 'June 26', 'August 28', 'No', '5');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Oregon', 'May 15', '—', 'No', '5');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Pennsylvania', 'May 15', '—', 'Yes', '18');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Puerto Rico', '—', '—', '—', '1 Resident');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Rhode Island', 'Septmeber 12', '—', 'Yes', '2');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('South Carolina', 'June 12', 'June 26', 'No', '7');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('South Dakota', 'June 5', '—', 'No', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Tennessee', 'August 2', '—', 'Yes', '9');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Texas', 'March 6', 'May 22', 'Yes', '36');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Utah', 'June 26', '—', 'Yes', '4');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Vermont', 'August 14', '—', 'Yes', '1');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Virgin Islands', 'August 4', '—', '—', '1 Delegate');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Virginia', 'June 12', '—', 'Yes', '11');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Washington', 'August 7', '—', 'Yes', '10');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('West Virginia', 'May 8', '—', 'Yes', '3');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Wisconsin', 'August 14', '—', 'Yes', '8');
+INSERT INTO elections(statename, electiondate, runoffdate, senate, representatives) VALUES ('Wyoming', 'August 21', '—', 'Yes', '1');
