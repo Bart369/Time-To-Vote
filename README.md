@@ -1,6 +1,6 @@
 # Time-To-Vote
 
-User Story:
+<b>User Story:</b>
 
 Joe is tired of what's going on in this crazy world so he decides to check out the Time To Vote app. 
 
@@ -8,15 +8,15 @@ He enters his address and sees all his elected officials. He also signed up to r
 
 Knowing who his elected officials are, he can go do some research on them while he waits to get his notification to go vote!
 
-Tech:
+<b>Tech:</b>
 
-Frontend: React,
-Backend: Node/Express,
-APIs - Google Civic Information Api (https://developers.google.com/civic-information/docs/using_api) &
-Election Official Data (https://www.usvotefoundation.org/Civic-Data-API)
+Frontend: React <br>
+Backend: Node/Express <br>
+API - Google Civic Information Api (https://developers.google.com/civic-information/docs/using_api) & <br>
+API - Election Official Data (https://www.usvotefoundation.org/Civic-Data-API)<br>
 More to come...
 
-Schedule:
+<b>Schedule:</b>
 
 Wednesday - Set up react and fetch from API to receive elected officials information.
 
