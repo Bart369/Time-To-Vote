@@ -1,8 +1,11 @@
 import React from 'react'
+import AddressForm from './AddressForm'
 
-const ElectedOfficials = () =>{
+const ElectedOfficials = (props) =>{
     return (
-        <p>This is electedofficials</p>
+        <div>
+            <AddressForm addressSubmit = {props.addressSubmit} />
+        </div>
     )
 }
 

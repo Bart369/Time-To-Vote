@@ -8,19 +8,29 @@ class Controller extends React.Component{
         super(props)
         this.state = {
             loadPage: props.currentPage,
+            officialsData: {},
         }
+        this.addressSubmit = this.addressSubmit.bind(this)
+    }
+
+    addressSubmit(e, data){
+        e.preventDefault();
+        fetch(`API/${data}`)
+        .then(res => res.json())
+            .then(res => {
+                this.setState({
+                    officialsData: res
+                })
+            }).catch(err => console.log(err))
     }
 
     decideWhichToRender(){
         switch(this.state.loadPage){
             case 'elections':
-                return <ElectedOfficials />
-                break;
-            case 'test':
-                return <Header />
+                return <Elections />
                 break;
             default:
-                return <Elections />
+                return <ElectedOfficials addressSubmit={this.addressSubmit} officialsData = {this.state.officialsData} />
                 break;
         }
     }
