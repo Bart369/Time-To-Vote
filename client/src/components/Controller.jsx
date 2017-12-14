@@ -1,32 +1,35 @@
 import React from 'react'
 import Header from './Header'
-import Election from './Elections'
+import Elections from './Elections'
 import ElectedOfficials from './ElectedOfficials'
 
 class Controller extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            currentPage: props.currentPage,
+            loadPage: props.currentPage,
         }
     }
 
     decideWhichToRender(){
-        switch(this.state.currentPage){
+        switch(this.state.loadPage){
             case 'elections':
                 return <ElectedOfficials />
                 break;
+            case 'test':
+                return <Header />
+                break;
             default:
-                return <Redirect push to = '/' />
+                return <Elections />
                 break;
         }
     }
 
-    renter(){
+    render(){
         return(
             <div>
                 <Header />
-                {(this.decideWhichToRender())}
+                {this.decideWhichToRender()}
             </div>
         )
 
