@@ -2,10 +2,10 @@ import React from 'react'
 import StateSelector from './StateSelector'
 import ElectionInfo from './ElectionInfo'
 
-const Elections = () => {
+const Elections = (props) => {
     return(
         <div>
-            <StateSelector />
+            <StateSelector electionsData={props.electionsData} />
             <ElectionInfo />
         </div>
     )

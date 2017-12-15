@@ -6,7 +6,7 @@ Election.findAll = () => {
     return db.manyOrNone(`SELECT * FROM elections`)
 }
 
-ELection.findById = (id) => {
+Election.findById = (id) => {
     return db.one(`SELECT * FROM elections WHERE id = $1`, id)
 }
 

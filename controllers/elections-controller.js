@@ -1,4 +1,4 @@
-const Election = rquire('../models/Election')
+const Election = require('../models/Election')
 
 const electionsController = {}
 

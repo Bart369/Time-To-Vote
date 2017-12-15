@@ -9,6 +9,7 @@ class Controller extends React.Component{
             loadPage: props.currentPage,
             officialsData: null,
             dataLoaded: false,
+            electionsData: null,
         }
         this.addressSubmit = this.addressSubmit.bind(this)
         this.getStateElections = this.getStateElections.bind(this)
@@ -20,6 +21,12 @@ class Controller extends React.Component{
 
     getStateElecions(){
         fetch('/api/elections')
+        .then(res => res.json())
+        .then(res => {
+            this.setState({
+                electionsData: res
+            })
+            }).catch(err => console.log(err))
     }
 
     addressSubmit(e, data){
@@ -37,7 +44,7 @@ class Controller extends React.Component{
     decideWhichToRender(){
         switch(this.state.loadPage){
             case 'elections':
-                return <Elections />
+                return <Elections electionsData = {this.state.electionsData} />
                 break;
             default:
                 return <ElectedOfficials addressSubmit={this.addressSubmit} officialsData = {this.state.officialsData} dataLoaded = {this.state.dataLoaded} />
