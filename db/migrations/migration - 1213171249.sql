@@ -12,18 +12,19 @@ CREATE TABLE IF NOT EXISTS electionstonotify(
     id SERIAL PRIMARY KEY,
     userid INTEGER,
     statename VARCHAR,
-    electiondate VARCHAR,
-    runoffdate VARCHAR,
+    electiondate DATE,
+    runoffdate DATE,
     senate VARCHAR,
-    representatives VARCHAR
+    representatives VARCHAR,
+    notificationdate DATE
 );
 
 DROP TABLE IF EXISTS elections;
 CREATE TABLE IF NOT EXISTS elections(
     id SERIAL PRIMARY KEY,
     statename VARCHAR,
-    electiondate VARCHAR,
-    runoffdate VARCHAR,
+    electiondate DATE,
+    runoffdate DATE,
     senate VARCHAR,
     representatives VARCHAR
 );
