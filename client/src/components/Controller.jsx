@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './Header'
 import Elections from './Elections'
 import ElectedOfficials from './ElectedOfficials'
 
@@ -40,7 +39,6 @@ class Controller extends React.Component{
     render(){
         return(
             <div>
-                <Header />
                 {this.decideWhichToRender()}
             </div>
         )

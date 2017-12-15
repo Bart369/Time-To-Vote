@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Header = (props) =>{
+const Header = () =>{
     return (
-        <p> This is header! </p>
+        <header>
+            <nav>
+                <ul>
+                    <li><Link to='/'>Elected Officials</Link></li>
+                    <li><Link to='/elections'>Upcoming Elections</Link></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 

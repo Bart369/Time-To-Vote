@@ -1,8 +1,13 @@
 import React from 'react'
+import StateSelector from './StateSelector'
+import ElectionInfo from './ElectionInfo'
 
 const Elections = () => {
     return(
-        <p>This is elections </p>
+        <div>
+            <StateSelector />
+            <ElectionInfo />
+        </div>
     )
 }
 
