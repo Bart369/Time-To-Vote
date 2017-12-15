@@ -11,6 +11,15 @@ class Controller extends React.Component{
             dataLoaded: false,
         }
         this.addressSubmit = this.addressSubmit.bind(this)
+        this.getStateElections = this.getStateElections.bind(this)
+    }
+
+    componentDidMount(){
+        this.getStateElections()
+    }
+
+    getStateElecions(){
+        fetch('/api/elections')
     }
 
     addressSubmit(e, data){

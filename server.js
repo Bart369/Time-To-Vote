@@ -23,7 +23,9 @@ app.use(cookieParser())
 
 app.use(express.static('public'))
 
-// officials api route
+// elections api route
+const electionsRoutes = require('./routes/elections-routes')
+app.use('/api/elections', electionsRoutes)
 
 
 app.get('*', function (req, res) {

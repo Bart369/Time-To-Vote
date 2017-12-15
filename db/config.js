@@ -6,8 +6,6 @@ const options = {
 
 const pgp = require('pg-promise')(options)
 
-let db
-
 function setDatabase(){
     if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
         db = pgp({
