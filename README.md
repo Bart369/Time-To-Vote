@@ -13,7 +13,6 @@ Knowing who his elected officials are, he can go do some research on them while 
 Frontend: React <br>
 Backend: Node/Express <br>
 API - Google Civic Information Api (https://developers.google.com/civic-information/docs/using_api) <br>
-API - Election Official Data (https://www.usvotefoundation.org/Civic-Data-API)<br>
 More to come...
 
 <b>Schedule:</b>
