@@ -26,3 +26,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+.official_item{
+  display: flex;
+  
+}
+
+.official_Img img{
+  max-width: 30vw;
+  max-height: 40vh;
+
+ 
+}

@@ -22,3 +22,10 @@ app.use(methodOverride('_method'))
 app.use(cookieParser())
 
 app.use(express.static('public'))
+
+// officials api route
+
+
+app.get('*', function (req, res) {
+    res.status(404).send({ message: 'Oops! Not found.' });
+})

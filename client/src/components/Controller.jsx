@@ -8,17 +8,19 @@ class Controller extends React.Component{
         super(props)
         this.state = {
             loadPage: props.currentPage,
-            officialsData: {},
+            officialsData: null,
+            dataLoaded: false,
         }
         this.addressSubmit = this.addressSubmit.bind(this)
     }
 
     addressSubmit(e, data){
         e.preventDefault();
-        fetch(`API/${data}`)
+        fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyAJ85dTY40tT8X8LJ8e8gdPWi8bft2PmWg&address=${data}`)
         .then(res => res.json())
             .then(res => {
                 this.setState({
+                    dataLoaded: true,
                     officialsData: res
                 })
             }).catch(err => console.log(err))
@@ -30,7 +32,7 @@ class Controller extends React.Component{
                 return <Elections />
                 break;
             default:
-                return <ElectedOfficials addressSubmit={this.addressSubmit} officialsData = {this.state.officialsData} />
+                return <ElectedOfficials addressSubmit={this.addressSubmit} officialsData = {this.state.officialsData} dataLoaded = {this.state.dataLoaded} />
                 break;
         }
     }
