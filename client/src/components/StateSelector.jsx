@@ -1,8 +1,17 @@
 import React from 'react'
 
-const StateSelector = () => {
+const StateSelector = (props) => {
     return (
-        null
+        <div>
+            {props.electionDataLoaded ? 
+                (props.electionsData.map(e => {
+                    return (
+                        <p>e.statename</p>
+                    )
+                }))
+            :
+            <p>Data Hasn't Loaded </p>}
+        </div> 
     )
 } 
 

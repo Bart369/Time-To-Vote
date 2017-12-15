@@ -5,7 +5,10 @@ import ElectionInfo from './ElectionInfo'
 const Elections = (props) => {
     return(
         <div>
-            <StateSelector electionsData={props.electionsData} />
+            <StateSelector 
+                electionsData={props.electionsData} 
+                electionsDataLoaded = {props.electionsDataLoaded}
+            />
             <ElectionInfo />
         </div>
     )
