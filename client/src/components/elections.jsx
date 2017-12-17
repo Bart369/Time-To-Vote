@@ -1,6 +1,7 @@
 import React from 'react'
 import StateSelector from './StateSelector'
 import ElectionInfo from './ElectionInfo'
+import NotificationForm from './NotificationForm'
 
 class Elections extends React.Component {
     constructor(props){
@@ -33,6 +34,10 @@ class Elections extends React.Component {
                     getSelectedState={this.getSelectedState}
                 />
                 <ElectionInfo 
+                    statedataLoaded={this.state.statedataLoaded}
+                    stateSelected={this.state.stateSelected}
+                />
+                <NotificationForm 
                     statedataLoaded={this.state.statedataLoaded}
                     stateSelected={this.state.stateSelected}
                 />
