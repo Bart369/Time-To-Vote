@@ -28,3 +28,5 @@ shareController.create = (req,res) => {
         console.log(err).json({ error: err })
     })
 }
+
+module.exports = shareController
