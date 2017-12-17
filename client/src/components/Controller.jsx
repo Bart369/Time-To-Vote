@@ -25,7 +25,6 @@ class Controller extends React.Component{
         fetch('/api/elections')
         .then(res => res.json())
         .then(res => {
-            console.log('inside get')
             this.setState({
                 electionsDataLoaded: true,
                 electionsData: res.data.elections,

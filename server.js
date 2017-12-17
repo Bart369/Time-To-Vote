@@ -27,6 +27,9 @@ app.use(express.static('public'))
 const electionsRoutes = require('./routes/elections-routes')
 app.use('/api/elections', electionsRoutes)
 
+const shareRoutes = require('./routes/share-routes')
+app.use('api/share', shareRoutes)
+
 
 app.get('*', function (req, res) {
     res.status(404).send({ message: 'Oops! Not found.' });

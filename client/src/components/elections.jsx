@@ -17,7 +17,6 @@ class Elections extends React.Component {
         fetch(`/api/elections/${e.target.value}`)
             .then(res => res.json())
             .then(res => {
-                console.log('test')
                 this.setState({
                     statedataLoaded: true,
                     stateSelected: res.data.election,
