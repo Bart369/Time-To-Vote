@@ -1,19 +1,24 @@
-const db = require('../db/config')
+const db = require('../db/config.js')
 
 const Share = {}
 
 Share.findAll = () => {
-    return db.query(`SELECT * FROM electionstonotify`)
+    return db.query(`SELECT * FROM election`)
 };
 
 
-Share.create = () => {
+Share.create = (election) => {
     return db.one(`
-        INSERT INTO electionstonotify
-        (statename, electiondate, runoffdate, senate, representatives, notificationdate)
-        VALUES ($1, $2, $3, $4, $5, $6)
+        INSERT INTO shareelections
+        (statename, electiondate, runoffdate, senate, representatives)
+        VALUES ($1, $2, $3, $4, $5)
         RETURNING *`,
-        [electionstonotify.statename, electionstonotify.electiondate, electionstonotify.runoffdate, electionstonotify.senate, electionstonotify.representatives, electionstonotify.notificationdate])
+        [election.statename, 
+        election.electiondate, 
+        election.runoffdate, 
+        election.senate, 
+        election.representatives]
+    )
 };
 
 module.exports = Share

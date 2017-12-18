@@ -28,7 +28,7 @@ const electionsRoutes = require('./routes/elections-routes')
 app.use('/api/elections', electionsRoutes)
 
 const shareRoutes = require('./routes/share-routes')
-app.use('api/share', shareRoutes)
+app.use('/api/share', shareRoutes)
 
 
 app.get('*', function (req, res) {

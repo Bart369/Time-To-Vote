@@ -20,12 +20,17 @@ shareController.create = (req,res) => {
         electiondate: req.body.electiondate,
         runoffdate: req.body.runoffdate,
         senate: req.body.senate,
-        representative: req.body.representative,
-        notificationdate: req.body.notificationdate
-    }).then(info => {
-        res.redirect('/elections/share')
+        representatives: req.body.representatives,
+    }).then(election => {
+        res.status(201).json({
+            message: 'Election added to list to be shared',
+            data:{
+                election: election,
+            }
+        })
     }).catch(err => {
         console.log(err).json({ error: err })
+        res.status(500).json(err)
     })
 }
 

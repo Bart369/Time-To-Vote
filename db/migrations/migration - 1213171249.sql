@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS users(
     password_digest TEXT NOT NULL
 );
 
-DROP TABLE IF EXISTS electionstonotify;
-CREATE TABLE IF NOT EXISTS electionstonotify(
+DROP TABLE IF EXISTS shareElections;
+CREATE TABLE IF NOT EXISTS shareElections(
     id SERIAL PRIMARY KEY,
     userid INTEGER,
     statename VARCHAR,
