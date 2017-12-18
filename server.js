@@ -7,21 +7,35 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const passport = require('passport')
 
-const app = express()
-require('dotenv').config()
+const app = express();
+require('dotenv').config();
+
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(
+    session({
+        key: process.env.SECRET_KEY,
+        secret: process.env.SECRET_KEY,
+        resave: false,
+        saveUninitialized: true,
+    }),
+);
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(express.static('public'));
+
+app.use((req, res, next) => {
+    console.log('-------', req.user, req.path);
+    next();
+})
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log(`Chillin on ${PORT} 😎`)    
+    console.log(`Chillin on ${PORT} 😎`)
 })
-
-app.use(logger('dev'))
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(methodOverride('_method'))
-app.use(cookieParser())
-
-app.use(express.static('public'))
 
 
 const authRoutes = require('./routes/auth-routes')
