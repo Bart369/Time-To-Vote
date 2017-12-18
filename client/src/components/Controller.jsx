@@ -1,6 +1,7 @@
 import React from 'react'
 import Elections from './Elections'
 import ElectedOfficials from './ElectedOfficials'
+import Share from './Share'
 
 class Controller extends React.Component{
     constructor(props){
@@ -48,15 +49,18 @@ class Controller extends React.Component{
         switch(this.state.loadPage){
             case 'elections':
                 return <Elections 
-                            electionsData = {this.state.electionsData} 
-                            electionsDataLoaded = {this.state.electionsDataLoaded} 
+                        electionsData = {this.state.electionsData} 
+                        electionsDataLoaded = {this.state.electionsDataLoaded} 
                         />
+                break;
+            case 'share':
+                return <Share />
                 break;
             default:
                 return <ElectedOfficials 
-                            addressSubmit={this.addressSubmit} 
-                            officialsData = {this.state.officialsData} 
-                            dataLoaded = {this.state.dataLoaded} 
+                        addressSubmit={this.addressSubmit} 
+                        officialsData = {this.state.officialsData} 
+                        dataLoaded = {this.state.dataLoaded} 
                         />
                 break;
         }

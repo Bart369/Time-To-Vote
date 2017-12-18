@@ -14,8 +14,9 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          <Route exact path= '/' render = {props => (<Controller currentPage='electedofficials' />)} />
+          <Route exact path = '/' render = {props => (<Controller currentPage='electedofficials' />)} />
           <Route exact path = '/elections' render = {props => (<Controller currentPage='elections' />)}/>
+          <Route exact path = '/share' render = {props => (<Controller currentPage='share' />)}/>
         </div>
       </Router>
     )

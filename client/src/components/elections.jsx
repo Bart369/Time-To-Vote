@@ -36,6 +36,7 @@ class Elections extends React.Component {
             body: JSON.stringify(data),
         }).then(res => res.json())
             .then(res => {
+                console.log(res)
                 console.log(data)
             }).catch(err => console.log(err))
     }
@@ -54,17 +55,8 @@ class Elections extends React.Component {
                 />
                 {this.state.statedataLoaded ? 
                 <form onSubmit={(e) => this.handleFormSubmit(e, this.state.stateSelected)}>
-                    {/* <input className="" type="hidden" name="statename" value={this.state.stateSelected.statename} />
-                    <input className="" type="hidden" name="electiondate" value={this.state.stateSelected.electiondate} />
-                    <input className="" type="hidden" name="runoffdate" value={this.state.stateSelected.runoffdate} />
-                    <input className="" type="hidden" name="senate" value={this.state.stateSelected.senate} />
-                    <input className="" type="hidden" name="representatives" value={this.state.stateSelected.representatives} /> */}
                     <input className="" type="submit" value='Add to list' />
                 </form>
-                // <NotificationForm 
-                //     stateSelected={this.state.stateSelected}
-                //     handleFormSubmit={this.handleFormSubmit}
-                // /> 
                 :
                  null}
             </div>

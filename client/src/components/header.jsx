@@ -8,6 +8,7 @@ const Header = () =>{
                 <ul>
                     <li><Link to='/'>Elected Officials</Link></li>
                     <li><Link to='/elections'>Upcoming Elections</Link></li>
+                    <li><Link to='/share'>Share Elections</Link></li>
                 </ul>
             </nav>
         </header>
