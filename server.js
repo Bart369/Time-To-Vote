@@ -23,7 +23,10 @@ app.use(cookieParser())
 
 app.use(express.static('public'))
 
-// elections api route
+
+const authRoutes = require('./routes/auth-routes')
+app.use('/auth'. authRoutes)
+
 const electionsRoutes = require('./routes/elections-routes')
 app.use('/api/elections', electionsRoutes)
 

@@ -3,7 +3,7 @@ const db = require('../db/config.js')
 const Share = {}
 
 Share.findAll = () => {
-    return db.query(`SELECT * FROM election`)
+    return db.query(`SELECT * FROM shareelections`)
 };
 
 

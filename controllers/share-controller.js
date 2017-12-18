@@ -4,10 +4,10 @@ const shareController = {}
 
 shareController.index = (req,res) => {
     Share.findAll()
-    .then(info => {
+    .then(elections => {
         res.status(200).json({
             message: 'ok',
-            data: { info }
+            data: { elections }
         })
         }).catch(err => {
             console.log(err).json({ error: err })
