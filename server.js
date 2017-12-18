@@ -39,7 +39,7 @@ app.listen(PORT, () => {
 
 
 const authRoutes = require('./routes/auth-routes')
-app.use('/auth'. authRoutes)
+app.use('/auth', authRoutes)
 
 const electionsRoutes = require('./routes/elections-routes')
 app.use('/api/elections', electionsRoutes)
