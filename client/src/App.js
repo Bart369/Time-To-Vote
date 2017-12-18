@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/auth/verify', { credentials: 'include' })
+    fetch('/auth/verify', { credentials: 'include' })
       .then(res => res.json())
       .then(res => {
         this.setState({
@@ -32,7 +32,7 @@ class App extends Component {
 
   handleLoginSubmit(e, data) {
     e.preventDefault();
-    fetch('/api/auth/login', {
+    fetch('/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ class App extends Component {
   handleRegisterSubmit(e, data) {
     e.preventDefault();
     console.log(data);
-    fetch('/api/auth/register', {
+    fetch('/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ class App extends Component {
   }
 
   logout() {
-    fetch('/api/auth/logout', {
+    fetch('/auth/logout', {
       credentials: 'include',
     }).then(res => res.json())
       .then(res => {

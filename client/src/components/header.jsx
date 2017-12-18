@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = () =>{
+const Header = (props) =>{
     return (
         <header>
             <nav>
@@ -11,6 +11,7 @@ const Header = () =>{
                     <li><Link to='/share'>Share Elections</Link></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/register">Register</Link></li>
+                    <li><button className="logout" onClick={props.logout}>Logout</button></li>
                 </ul>
             </nav>
         </header>

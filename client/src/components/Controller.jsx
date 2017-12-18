@@ -54,11 +54,11 @@ class Controller extends React.Component{
                         />
                 break;
             case 'share':
-                return <Share />
+                return <Share user = {this.props.user} />
                 break;
             default:
                 return <ElectedOfficials 
-                        addressSubmit={this.addressSubmit} 
+                        addressSubmit = {this.addressSubmit} 
                         officialsData = {this.state.officialsData} 
                         dataLoaded = {this.state.dataLoaded} 
                         />
