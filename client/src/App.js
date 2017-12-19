@@ -75,6 +75,7 @@ class App extends Component {
       .then(res => {
         this.setState({
           auth: res.auth,
+          user: null,
         })
       }).catch(err => console.log(err));
   }
@@ -84,7 +85,7 @@ class App extends Component {
     return (  
       <Router>
         <div>
-          <Header logout={this.logout} />
+          <Header logout={this.logout} user={this.state.user}/>
           <Route exact path = '/' render = {props => (<Controller currentPage='electedofficials' />)} />
           <Route exact path='/login' render={() => (
             this.state.auth

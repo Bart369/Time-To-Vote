@@ -23,13 +23,17 @@ const ElectedOfficials = (props) =>{
                         <div className='official_Data'>
                             <p>Office: {e.name}</p><br/>
                             <p>Official: {props.officialsData.officials[e.officialIndices[0]].name}</p>
+                            <p>Party: {props.officialsData.officials[e.officialIndices[0]].party}</p>
+                            {/* <p>Email: {props.officialsData.officials[e.officialIndices[0]].emails[0]}</p> */}
+                            <p>Phone: {props.officialsData.officials[e.officialIndices[0]].phones[0]}</p>
+                            <p>Site: {props.officialsData.officials[e.officialIndices[0]].urls[0]}</p>
                         </div>
                      </li>
                 )   
                 })}
                 </ul>
             
-            : <p>No address entered</p>}
+            : null}
             </div>
         </div>
     )
