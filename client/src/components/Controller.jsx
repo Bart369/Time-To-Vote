@@ -49,6 +49,7 @@ class Controller extends React.Component{
         switch(this.state.loadPage){
             case 'elections':
                 return <Elections 
+                        user = {this.props.user}
                         electionsData = {this.state.electionsData} 
                         electionsDataLoaded = {this.state.electionsDataLoaded} 
                         />

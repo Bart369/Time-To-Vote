@@ -7,8 +7,8 @@ const usersController = require('../controllers/users-controller');
 authRouter.post('/register', usersController.create);
 
 authRouter.post('/login', passport.authenticate('local', {
-    successRedirect: '/api/auth/verify',
-    failureRedirect: '/api/auth/verify',
+    successRedirect: '/auth/verify',
+    failureRedirect: '/auth/verify',
     failureFlash: true,
 })
 );

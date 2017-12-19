@@ -36,8 +36,6 @@ class Elections extends React.Component {
             body: JSON.stringify(data),
         }).then(res => res.json())
             .then(res => {
-                console.log(res)
-                console.log(data)
             }).catch(err => console.log(err))
     }
 
