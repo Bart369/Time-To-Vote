@@ -1,6 +1,7 @@
 import React from 'react'
 import StateSelector from './StateSelector'
 import ElectionInfo from './ElectionInfo'
+import ShareForm from './ShareForm'
 
 class Elections extends React.Component {
     constructor(props){
@@ -51,9 +52,13 @@ class Elections extends React.Component {
                     stateSelected={this.state.stateSelected}
                 />
                 {this.state.statedataLoaded ? 
+                //  <ShareForm 
+                // user={this.props.user}
+                // stateSelected={this.state.stateSelected}
+                // handleFormSubmit={this.handleFormSubmit} /> 
                 <form onSubmit={(e) => this.handleFormSubmit(e, this.state.stateSelected)}>
                     <input className="" type="submit" value='Add to list' />
-                </form>
+                </form> 
                 :
                  null}
             </div>
