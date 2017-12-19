@@ -1,7 +1,6 @@
 import React from 'react'
 import StateSelector from './StateSelector'
 import ElectionInfo from './ElectionInfo'
-import NotificationForm from './NotificationForm'
 
 class Elections extends React.Component {
     constructor(props){

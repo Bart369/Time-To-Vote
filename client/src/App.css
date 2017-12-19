@@ -1,5 +1,9 @@
 /************* General ****************/
 
+body{
+  background-color: #3366ff
+}
+
 a{
   text-decoration: none
 }
@@ -7,6 +11,7 @@ a{
 li{
   list-style: none
 }
+
 
 
 
@@ -26,4 +31,40 @@ nav ul{
 
 nav ul li{
   margin-left: 2%
+}
+
+
+/************** Main **************/
+
+.main{
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  align-items: center;
+}
+
+
+
+
+
+/*********** Elected Officials ************/
+
+.elected_Officials_Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+
+/* .address_Bar{
+  display: flex;
+} */
+
+.official_item{
+  display: flex;
+}
+
+.official_Img img{
+  max-width: 300px;
+  max-height: 300px;
 }

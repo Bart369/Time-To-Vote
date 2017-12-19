@@ -69,7 +69,7 @@ class Controller extends React.Component{
 
     render(){
         return(
-            <div className = 'main'>
+            <div>
                 {this.decideWhichToRender()}
             </div>
         )
