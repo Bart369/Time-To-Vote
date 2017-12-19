@@ -19,6 +19,7 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "pg-promise": "^7.3.2",
+    "react-minimal-dropdown": "^1.1.1",
     "react-router-dom": "^4.2.2"
   },
   "scripts": {

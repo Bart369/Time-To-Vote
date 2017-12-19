@@ -1,7 +1,7 @@
 /************* General ****************/
 
 body{
-  background-color: #3366ff
+  background-color: #000099
 }
 
 a{
@@ -62,9 +62,16 @@ nav ul li{
 
 .official_item{
   display: flex;
+  background-color: #cccccc;
+  border: 3px solid #999999;
+  max-height: 35vh;
+  border-radius: 3px;
+  
+  padding: 0;
 }
 
 .official_Img img{
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 20vw;
+  max-height: 35vh;
+  
 }

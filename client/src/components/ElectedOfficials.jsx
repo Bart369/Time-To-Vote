@@ -1,5 +1,6 @@
 import React from 'react'
 import AddressForm from './AddressForm'
+import Dropdown from 'react-minimal-dropdown'
 
 const ElectedOfficials = (props) =>{
     return (
