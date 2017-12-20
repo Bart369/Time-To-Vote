@@ -27,16 +27,17 @@ class Elections extends React.Component {
     }
 
     handleFormSubmit(e, data) {
+        // this;
+        // debugger
         e.preventDefault()
         fetch('/api/share', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(Object.assign({}, data, { user_id: this.props.user })),
+            body: JSON.stringify(data),
         }).then(res => res.json())
             .then(res => {
-                console.log(this.props.user_id)
             }).catch(err => console.log(err))
     }
 

@@ -51,12 +51,17 @@ table {
 /************* General ****************/
 
 body{
-  background-color: #ff0000
+  background-color: #b30000
 }
 
 a{
-  text-decoration: none
+  text-decoration: none;
+  color: white
 }
+
+/* a:visited { 
+    color: none
+} */
 
 li{
   list-style: none
@@ -68,22 +73,42 @@ li{
 /************* HEADER ****************/
 
 nav{
-  margin: 0;
-  padding: 0;
-  background-color: #3399ff;
-  border: 1px black solid;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0000b3;
+  border-bottom: 10px white solid;
   height: 10vh;
 }
 
 nav ul{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 10vh;
+  margin-right: 5%;
+  padding-top: 5vh;
+
 }
 
 nav ul li{
-  margin-left: 2%
+  font-size: 25px;
+  margin: 5px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
+nav ul li a:hover{
+  color: #b30000
+}
+
+.fa-star{
+  font-size: 50px;
+  order:0;
+  align-self: flex-end;
+  align-items: center;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  color: white
+}
 
 /************** Main **************/
 
@@ -108,30 +133,51 @@ nav ul li{
 }
 
 .zip_bar{
-  min-width: 10vw;
+  width: 200px;
+  height: 34px;
+  margin-right: 1px;
   font-size: 20px;
-  border: 2px black solid
+  text-align: center
 }
 
 
 .zip_but{
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 19px;
+  width: 100px;
+  height: 41px;
 }
 
 .official_item{
   display: flex;
+  /* justify-content: center; */
   background-color: #cccccc;
   border: 3px solid #999999;
-  max-height: 35vh;
+  min-height: 35vh;
+  max-width: 40vw;
   border-radius: 3px;
-  
   padding: 0;
+}
+
+.official_Data{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  
 }
 
 .official_Img img{
   max-width: 20vw;
   max-height: 35vh;
+}
+
+.address_form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  min-width: 40vw;
+  
   
 }
 

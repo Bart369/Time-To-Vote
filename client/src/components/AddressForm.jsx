@@ -21,7 +21,7 @@ class AddressForm extends React.Component {
 
     render(){
         return(
-            <form onSubmit={(e) => this.props.addressSubmit(e, this.state.address)}>
+            <form className = 'address_form' onSubmit={(e) => this.props.addressSubmit(e, this.state.address)}>
                 <input className='zip_bar' type="text" maxlength="5" name="address" placeholder="Enter Zipcode Here" value={this.state.value} onChange={this.handler} />
                 {/* <input className='zip_but' type="submit" value='Search' /> */}
                 <button className = 'zip_but' type='submit' >Search</button>

@@ -31,8 +31,7 @@ const ElectedOfficials = (props) =>{
                      </li>
                 )   
                 })}
-                </ul>
-            
+                </ul>         
             : null}
             </div>
         </div>
