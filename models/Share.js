@@ -7,7 +7,7 @@ Share.findAll = () => {
 };
 
 
-Share.create = (election, userId) => {
+Share.create = (election) => {
     return db.one(`
         INSERT INTO shareelections
         (statename, electiondate, runoffdate, senate, representatives, userid)
@@ -18,7 +18,7 @@ Share.create = (election, userId) => {
         election.runoffdate, 
         election.senate, 
         election.representatives,
-        userId]
+        election.userid]
     )
 };
 
