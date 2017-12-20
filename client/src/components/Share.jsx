@@ -16,7 +16,7 @@ class Share extends React.Component{
     }
 
     getSavedElections(){
-        fetch('/api/share')
+        fetch(`/api/share/${this.props.user.id}`)
         .then(res => res.json())
         .then(res => {
             this.setState({
