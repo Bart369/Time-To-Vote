@@ -2,9 +2,9 @@ import React from 'react'
 
 const StateSelector = (props) => {
     return (
-        <div>
+        <div className='selector_Container'>
             {props.electionsDataLoaded ? 
-                (<select onChange={props.getSelectedState}>
+                (<select className = 'selector' onChange={props.getSelectedState}>
                     {props.electionsData.map(e => {
                         return (
                             <option value={e.id}>{e.statename}</option>

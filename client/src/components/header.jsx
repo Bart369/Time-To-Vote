@@ -13,8 +13,7 @@ const Header = (props) =>{
                     <li><Link to='/share'>Share Elections</Link></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/register">Register</Link></li>
-                    <li><button className="logout" onClick={props.logout}>Logout</button></li>
-                    {props.user ? <li><p>Hi {props.user.username}</p></li> : null}
+                    {props.user ? <li><button className="logout" onClick={props.logout}>Hi {props.user.username}, Logout?</button></li> : null}
                 </ul>
             </nav>
         </header>

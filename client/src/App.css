@@ -91,7 +91,7 @@ nav ul{
 
 nav ul li{
   font-size: 25px;
-  margin: 5px;
+  margin: 10px;
   font-family: 'Oswald', sans-serif;
   color: white;
 }
@@ -187,4 +187,22 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   flex-direction: column
+}
+
+/*********** Coming Elections ************/
+
+.elections_Container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector_Container{
+  display: flex;
+  justify-content: center;
+}
+
+.selector{
+  max-height: 40vh
 }

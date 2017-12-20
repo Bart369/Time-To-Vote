@@ -43,7 +43,7 @@ class Elections extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className='elections_Container'>
                 <StateSelector 
                     electionsData={this.props.electionsData} 
                     electionsDataLoaded = {this.props.electionsDataLoaded}
