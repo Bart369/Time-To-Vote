@@ -2,8 +2,9 @@ const db = require('../db/config.js')
 
 const Share = {}
 
-Share.findAll = () => {
+Share.findAll = (id) => {
     return db.query(`SELECT * FROM shareelections`)
+    // return db.query(`SELECT * FROM shareelections WHERE userid = $1`, [id])
 };
 
 

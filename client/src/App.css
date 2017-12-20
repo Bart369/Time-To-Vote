@@ -67,6 +67,10 @@ li{
   list-style: none
 }
 
+p{
+  font-family: 'Noto Sans', sans-serif;
+}
+
 
 
 
@@ -110,6 +114,13 @@ nav ul li a:hover{
   color: white
 }
 
+
+
+.logout:hover{
+  background-color: #b30000;
+  color: white;
+  border-radius: 5px;
+}
 /************** Main **************/
 
 .main{
@@ -200,9 +211,39 @@ nav ul li a:hover{
 
 .selector_Container{
   display: flex;
-  justify-content: center;
+  
 }
 
 .selector{
-  max-height: 40vh
+  max-height: 40vh;
+}
+
+.elections_Info{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+.elections_Data{
+  background-color:#cccccc;
+  margin: 5px;
+  border: 2px solid;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.election_Form{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.election_Sub{
+  /* font-size: 15px; */
+}
+
+.election_Sub:hover{
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
 }

@@ -3,7 +3,8 @@ const Share = require('../models/Share')
 const shareController = {}
 
 shareController.index = (req,res) => {
-    Share.findAll()
+    console.log(req.body)
+    Share.findAll(req.params.id)
     .then(elections => {
         res.status(200).json({
             message: 'ok',

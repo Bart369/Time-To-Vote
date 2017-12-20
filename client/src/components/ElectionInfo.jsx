@@ -4,7 +4,7 @@ const ElectionInfo = (props) => {
     return(
         <div>
         {props.statedataLoaded ?
-            <div>
+            <div className='elections_Data'>
                 <p>State: {props.stateSelected.statename}</p>
                 <p>Election Date: {props.stateSelected.electiondate ? props.stateSelected.electiondate : 'N/A'}</p>
                 <p>Runoff Date: {props.stateSelected.runoffdate ? props.stateSelected.runoffdate : 'N/A'}</p>

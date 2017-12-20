@@ -1,7 +1,7 @@
 import React from 'react'
 import StateSelector from './StateSelector'
 import ElectionInfo from './ElectionInfo'
-import ShareForm from './ShareForm'
+
 
 class Elections extends React.Component {
     constructor(props){
@@ -33,6 +33,8 @@ class Elections extends React.Component {
             headers: {
                 'Content-Type': 'application/json',
             },
+            // data(which is the info from this.state.stateSelected) doesnt include a userid property,
+            // we are now adding a userid from and giving it the value of the user's id
             body: JSON.stringify(Object.assign({}, data, { userid: this.props.user.id })),
         }).then(res => res.json())
             .then(res => {
@@ -48,20 +50,18 @@ class Elections extends React.Component {
                     electionsDataLoaded = {this.props.electionsDataLoaded}
                     getSelectedState={this.getSelectedState}
                 />
-                <ElectionInfo 
-                    statedataLoaded={this.state.statedataLoaded}
-                    stateSelected={this.state.stateSelected}
-                />
-                {this.state.statedataLoaded ? 
-                //  <ShareForm 
-                // user={this.props.user}
-                // stateSelected={this.state.stateSelected}
-                // handleFormSubmit={this.handleFormSubmit} /> 
-                <form onSubmit={(e) => this.handleFormSubmit(e, this.state.stateSelected)}>
-                    <input className="" type="submit" value='Add to list' />
-                </form> 
-                :
-                 null}
+                <div className = 'elections_Info'>
+                    <ElectionInfo 
+                        statedataLoaded={this.state.statedataLoaded}
+                        stateSelected={this.state.stateSelected}
+                    />
+                    {this.state.statedataLoaded ? 
+                    <form className="election_Form" onSubmit={(e) => this.handleFormSubmit(e, this.state.stateSelected)}>
+                        <input className="election_Sub" type="submit" value='Add to Share list' />
+                    </form> 
+                    :
+                    null}
+                 </div>
             </div>
         )
     }
