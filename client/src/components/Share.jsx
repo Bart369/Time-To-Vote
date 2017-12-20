@@ -31,6 +31,7 @@ class Share extends React.Component{
            <div>
                {this.state.dataLoaded ? 
                 (<ul>
+                    
                     {this.state.savedElections.map(e => { 
                         return(
                             <div>

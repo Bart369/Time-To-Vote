@@ -160,11 +160,10 @@ nav ul li a:hover{
 
 .official_item{
   display: flex;
-  /* justify-content: center; */
   background-color: #cccccc;
   border: 3px solid #999999;
   min-height: 35vh;
-  max-width: 40vw;
+  max-width: 60vw;
   border-radius: 3px;
   padding: 0;
 }
@@ -194,10 +193,30 @@ nav ul li a:hover{
 
 /*********** Login Form ************/
 
+.login{
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .login_form{
   display: flex;
+  flex-direction: column;
+}
+
+/*********** Register Form ************/
+
+.register{
+  display: flex;
+  height: 80vh;
+  align-items: center;
   justify-content: center;
-  flex-direction: column
+}
+
+.register_form{
+  display: flex;
+  flex-direction: column;
 }
 
 /*********** Coming Elections ************/
