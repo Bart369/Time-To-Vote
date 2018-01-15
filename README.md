@@ -13,13 +13,11 @@ Knowing who his elected officials are, he can go do some research on them while 
 Frontend: React <br>
 Backend: Node/Express <br>
 API - Google Civic Information Api (https://developers.google.com/civic-information/docs/using_api) <br>
-More to come...
 
-<b>Schedule:</b>
+Features/Improvements: I would like to allow the user to share the election dates and even the elected officials data on facebook. I want to be able to show information on the candidates running but this data is not yet available. I think this app would work
+best on mobile so I need to do some tweeking to improve its functionality on those platforms.
 
-Wednesday - Set up react and fetch from API to receive elected officials information.
-
-Thursday - Express and DB migrations 
+ 
 
 
 
