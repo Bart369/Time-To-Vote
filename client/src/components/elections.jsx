@@ -55,12 +55,12 @@ class Elections extends React.Component {
                         statedataLoaded={this.state.statedataLoaded}
                         stateSelected={this.state.stateSelected}
                     />
-                    {this.state.statedataLoaded ? 
+                    {/* {this.state.statedataLoaded ? 
                     <form className="election_Form" onSubmit={(e) => this.handleFormSubmit(e, this.state.stateSelected)}>
                         <input className="election_Sub" type="submit" value='Add to Share list' />
                     </form> 
                     :
-                    null}
+                    null} */}
                  </div>
             </div>
         )

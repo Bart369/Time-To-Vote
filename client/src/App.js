@@ -87,7 +87,8 @@ class App extends Component {
         <div>
           <Header logout={this.logout} user={this.state.user}/>
           <Route exact path = '/' render = {props => (<Controller currentPage='electedofficials' />)} />
-          <Route exact path='/login' render={() => (
+          <Route exact path='/elections' render={props => (<Controller currentPage='elections' />)} />
+          {/* <Route exact path='/login' render={() => (
             this.state.auth
               ? <Redirect to='/' />
               : <Login handleLoginSubmit={this.handleLoginSubmit} />
@@ -106,7 +107,7 @@ class App extends Component {
             !this.state.auth
               ? <Redirect to='/login' />
               : <Controller user={this.state.user} currentPage='share' />
-          )} />
+          )} /> */}
 
         </div>
       </Router>
